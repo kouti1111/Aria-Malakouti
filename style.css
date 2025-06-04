@@ -1,16 +1,80 @@
 body {
-  font-family: "Tahoma", sans-serif;
-  background-color: #000;
-  color: #f0c040;
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background: url('https://kouti1111.github.io/Aria-Malakouti/images/hero-gold.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 50px;
 }
 
-h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
+.hero-section .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
-p {
-  font-size: 18px;
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  color: #ccc;
+}
+
+.language-switcher {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.language-switcher button {
+  background: none;
+  border: none;
+  color: white;
+  margin-left: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.language-switcher button:hover {
+  color: gold;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 3rem;
+  background-color: #111;
+}
+
+.category {
+  background-color: #222;
+  padding: 2rem;
+  border: 1px solid #333;
+  text-align: center;
+  font-weight: bold;
+}
+
+footer {
+  background-color: black;
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
 }
